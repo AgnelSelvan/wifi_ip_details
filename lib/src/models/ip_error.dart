@@ -12,7 +12,7 @@ class IPDetailsError {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['error'] = error;
     data['reason'] = reason;
     data['message'] = message;
