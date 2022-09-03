@@ -12,7 +12,7 @@ and the Flutter guide for
 -->
 # wifi_ip_details
 
-<!-- [![pub package](https://img.shields.io/pub/v/wifi_ip_details.svg)](https://pub.dev/packages/wifi_ip_details) -->
+[![pub package](https://img.shields.io/pub/v/wifi_ip_details.svg)](https://pub.dev/packages/wifi_ip_details)
 
 This package allows Flutter apps to get Wifi IP Details like Internet Service Provider(ISP), Country, Public IP Address, etc.
 
@@ -33,10 +33,12 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 ## Usage
 * For getting WIFI Details just call this method
 ```dart
+    // Getting WIFI IP Details
     final _ipDetails = await WifiIPDetails.getMyWIFIDetails();
 ```
 * Incase you have the access token then just pass in the access token on the same method.
 ```dart
+    // Getting WIFI IP Details using Access Token
     final _ipDetails = await WifiIPDetails.getMyWIFIDetails("YOUR ACCESS TOKEN");
 ```
 
