@@ -22,8 +22,8 @@ class IPDetails {
   String? currency;
   String? currencyName;
   String? languages;
-  int? countryArea;
-  int? countryPopulation;
+  double? countryArea;
+  double? countryPopulation;
   String? asn;
   String? org;
 
@@ -80,42 +80,10 @@ class IPDetails {
     currency = json['currency'];
     currencyName = json['currency_name'];
     languages = json['languages'];
-    countryArea = json['country_area'];
-    countryPopulation = json['country_population'];
+    countryArea = double.tryParse("${json['country_area']}");
+    countryPopulation = double.tryParse("${json['country_population']}");
     asn = json['asn'];
     org = json['org'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['ip'] = ip;
-    data['network'] = network;
-    data['version'] = version;
-    data['city'] = city;
-    data['region'] = region;
-    data['region_code'] = regionCode;
-    data['country'] = country;
-    data['country_name'] = countryName;
-    data['country_code'] = countryCode;
-    data['country_code_iso3'] = countryCodeIso3;
-    data['country_capital'] = countryCapital;
-    data['country_tld'] = countryTld;
-    data['continent_code'] = continentCode;
-    data['in_eu'] = inEu;
-    data['postal'] = postal;
-    data['latitude'] = latitude;
-    data['longitude'] = longitude;
-    data['timezone'] = timezone;
-    data['utc_offset'] = utcOffset;
-    data['country_calling_code'] = countryCallingCode;
-    data['currency'] = currency;
-    data['currency_name'] = currencyName;
-    data['languages'] = languages;
-    data['country_area'] = countryArea;
-    data['country_population'] = countryPopulation;
-    data['asn'] = asn;
-    data['org'] = org;
-    return data;
   }
 
   @override

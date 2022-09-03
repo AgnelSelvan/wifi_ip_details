@@ -1,8 +1,7 @@
 name: wifi_ip_details
 description: A Flutter package for getting WIFI Details.
 version: 0.0.1
-author: Agnel Selvan
-homepage: null
+homepage: https://github.com/AgnelSelvan/wifi_ip_details.git
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

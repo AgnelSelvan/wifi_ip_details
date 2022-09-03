@@ -10,30 +10,37 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
+# wifi_ip_details
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<!-- [![pub package](https://img.shields.io/pub/v/wifi_ip_details.svg)](https://pub.dev/packages/wifi_ip_details) -->
 
-## Features
+This package allows Flutter apps to get Wifi IP Details like Internet Service Provider(ISP), Country, Public IP Address, etc.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Platform Support
 
-## Getting started
+| Android | iOS | MacOS | Web | Linux | Windows |
+| :-----: | :-: | :---: | :-: | :---: | :----: |
+|   ✔️    | ✔️  |  ✔️   | ✔️  |  ✔️   |   ✔️   |
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Installation
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+In the `dependencies:` section of your `pubspec.yaml`, add the following line:
+```yaml
+    dependencies:
+        wifi_ip_details: <latest_version>
 ```
 
-## Additional information
+## Usage
+* For getting WIFI Details just call this method
+```dart
+    final _ipDetails = await WifiIPDetails.getMyWIFIDetails();
+```
+* Incase you have the access token then just pass in the access token on the same method.
+```dart
+    final _ipDetails = await WifiIPDetails.getMyWIFIDetails("YOUR ACCESS TOKEN");
+```
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+### Additional Information
+- Enable Internet Permission.
+
+Don't Forget to give **Star** and **Like** 🚀
