@@ -1,16 +1,15 @@
 name: wifi_ip_details
 description: This package allows Flutter apps to get Wifi IP Details like Internet Service Provider(ISP), Country, Public IP Address, etc.
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/AgnelSelvan/wifi_ip_details.git
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=3.0.5 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.5
+  http: ^1.0.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
